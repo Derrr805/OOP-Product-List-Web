@@ -27,7 +27,6 @@ Cara Menjalankan Aplikasi
 Klon repositori ini ke mesin lokal kamu:
 
 bash
-Copy code
 git clone https://github.com/username/repository.git
 Konfigurasi database:
 Pastikan untuk mengonfigurasi koneksi database di application.properties (atau application.yml jika menggunakan YAML). Sesuaikan pengaturan dengan kredensial database yang kamu gunakan.
@@ -36,7 +35,6 @@ Jalankan Aplikasi:
 Setelah semua dependensi diinstal dan database dikonfigurasi, jalankan aplikasi dengan perintah:
 
 bash
-Copy code
 mvn spring-boot:run
 Aplikasi akan berjalan di localhost:8080 dan siap menerima permintaan API untuk mengelola produk.
 
@@ -49,7 +47,6 @@ Metode: POST
 Body Request:
 
 json
-Copy code
 {
   "name": "Product Name",
   "description": "Product Description",
@@ -63,7 +60,6 @@ Metode: GET
 Response:
 
 json
-Copy code
 [
   {
     "id": 1,
@@ -80,7 +76,6 @@ Metode: GET
 Response:
 
 json
-Copy code
 {
   "id": 1,
   "name": "Product Name",
@@ -95,7 +90,6 @@ Metode: PUT
 Body Request:
 
 json
-Copy code
 {
   "name": "Updated Product Name",
   "description": "Updated Product Description",
@@ -110,7 +104,6 @@ Evaluasi dan Pengujian
 Aplikasi ini dilengkapi dengan pengujian unit dan integrasi untuk memastikan fungsionalitas API. Kamu dapat menjalankan pengujian dengan perintah berikut:
 
 bash
-Copy code
 mvn test
 Lisensi
 Proyek ini dilisensikan di bawah MIT License.
